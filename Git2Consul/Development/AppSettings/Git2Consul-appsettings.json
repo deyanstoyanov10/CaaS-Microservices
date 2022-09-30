@@ -1,37 +1,43 @@
 {
-    "ConsulConfiguration": {
-      "Enabled": true,
-      "Url": "http://consul:8500",
-      "ServiceName": "Git2Consul",
-      "Address": "localhost",
-      "Port": 80,
-      "ReloadOnChange": true
-    },
-    "FabioConfiguration": {
-      "Enabled": true,
-      "FabioUrl": "http://fabio:9999"
-    },
-    "Logging": {
-      "LogLevel": {
-        "Default": "Information",
-        "Microsoft.AspNetCore": "Warning"
+  "ConsulConfiguration": {
+    "Enabled": true,
+    "Url": "http://consul:8500",
+    "ServiceName": "Git2Consul",
+    "Address": "localhost",
+    "Port": 80,
+    "ReloadOnChange": true
+  },
+  "FabioConfiguration": {
+    "Enabled": true,
+    "FabioUrl": "http://fabio:9999"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "Serilog": {
+    "MinimumLevel": "Debug"
+  },
+  "TestObj": {
+    "Prop": "Test1"
+  },
+  "CaaSConfiguration": {
+    "ServicesConfiguration": [
+      {
+        "ServiceName": "Git2Consul",
+        "Environments": [
+          "Development"
+        ]
+      },
+      {
+        "ServiceName": "Test",
+        "Environments": [
+          "Development"
+        ]
       }
-    },
-    "Serilog": {
-      "MinimumLevel": "Debug"
-    },
-    "TestObj": {
-      "Prop": "Test1"
-    },
-    "CaaSConfiguration": {
-      "ServicesConfiguration": [
-        {
-          "ServiceName": "Git2Consul",
-          "Environments": [
-            "Development"
-          ]
-        }
-      ]
-    },
-    "AllowedHosts": "*"
+    ]
+  },
+  "AllowedHosts": "*"
 }
