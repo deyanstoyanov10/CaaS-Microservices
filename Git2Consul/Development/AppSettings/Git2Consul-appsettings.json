@@ -1,6 +1,6 @@
 {
     "ConsulConfiguration": {
-      "Enabled": false,
+      "Enabled": true,
       "Url": "http://consul:8500",
       "ServiceName": "Git2Consul",
       "Address": "localhost",
@@ -8,7 +8,7 @@
       "ReloadOnChange": true
     },
     "FabioConfiguration": {
-      "Enabled": false,
+      "Enabled": true,
       "FabioUrl": "http://fabio:9999"
     },
     "Logging": {
