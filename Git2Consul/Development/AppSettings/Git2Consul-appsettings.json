@@ -21,7 +21,7 @@
     "MinimumLevel": "Debug"
   },
   "TestObj": {
-    "Prop": "Test3"
+    "Prop": "Test2"
   },
   "AllowedHosts": "*"
 }
