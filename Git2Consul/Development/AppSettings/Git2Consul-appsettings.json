@@ -23,21 +23,5 @@
   "TestObj": {
     "Prop": "Test2"
   },
-  "CaaSConfiguration": {
-    "ServicesConfiguration": [
-      {
-        "ServiceName": "Git2Consul",
-        "Environments": [
-          "Development"
-        ]
-      },
-      {
-        "ServiceName": "Test",
-        "Environments": [
-          "Development"
-        ]
-      }
-    ]
-  },
   "AllowedHosts": "*"
 }
